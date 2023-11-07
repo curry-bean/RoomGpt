@@ -1,12 +1,14 @@
-# [roomGPT.io](https://roomGPT.io)
+# [RoomGPT](https://roomGPT.io) - redesign your room with AI
 
-This project generates designs of your room with AI.
+This is the previous and open source version of RoomGPT.io (a paid SaaS product). It's the very first version of roomGPT without the auth, payments, or additional features and it's simple to clone, deploy, and play around with.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nutlope/roomGPT&env=REPLICATE_API_KEY&project-name=room-GPT&repo-name=roomGPT)
 
 [![Room GPT](./public/screenshot.png)](https://roomGPT.io)
 
 ## How it works
 
-It uses an ML model called [ControlNet](https://github.com/lllyasviel/ControlNet) to generate variations of rooms. This application gives you the ability to upload a photo of any room, which will send it through this ML Model using a Next.js API route, and return your generated room. The ML Model is hosted on [Replicate](https://replicate.com) and [Upload](https://upload.io) is used for image storage.
+It uses an ML model called [ControlNet](https://github.com/lllyasviel/ControlNet) to generate variations of rooms. This application gives you the ability to upload a photo of any room, which will send it through this ML Model using a Next.js API route, and return your generated room. The ML Model is hosted on [Replicate](https://replicate.com) and [Bytescale](https://www.bytescale.com/) is used for image storage.
 
 ## Running Locally
 
@@ -19,8 +21,8 @@ git clone https://github.com/Nutlope/roomGPT
 ### Creating a account on Replicate to get an API key.
 
 1. Go to [Replicate](https://replicate.com/) to make an account.
-2. Click on your profile picture in the top right corner, and click on "Dashboard".
-3. Click on "Account" in the navbar. And, here you can find your API token, copy it.
+2. Click on your profile picture in the top left corner, and click on "API Tokens".
+3. Here you can find your API token. Copy it.
 
 ### Storing the API keys in .env
 
@@ -47,3 +49,7 @@ npm run dev
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nutlope/roomGPT&env=REPLICATE_API_KEY&project-name=room-GPT&repo-name=roomGPT)
+
+## License
+
+This repo is MIT licensed.
